@@ -1,0 +1,164 @@
+/* === RESET DASAR === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* === BODY === */
+body {
+  background-color: #eaf6f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === NAVBAR === */
+nav {
+  background-color: #008080;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 4px solid #004d4d;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+/* === JUDUL UTAMA === */
+.content h1 {
+  text-align: center;
+  margin: 40px 0;
+  color: #006666;
+  background-color: #ccf2f4;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 128, 128, 0.3);
+}
+
+/* === PROFIL === */
+.content1 {
+  text-align: center;
+  background-color: #fef9c3;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 30px auto;
+  width: 70%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content1 img {
+  border-radius: 20px;
+  border: 5px solid #ffa500;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.content1 img:hover {
+  transform: scale(1.05);
+}
+
+.content1 h6 {
+  color: #333;
+  font-size: 18px;
+}
+
+.content1 p strong {
+  color: #008000;
+}
+
+/* === TENTANG SAYA === */
+.container {
+  background-color: #fff8dc;
+  border-radius: 15px;
+  padding: 40px;
+  width: 80%;
+  margin: 30px auto;
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+}
+
+.tentang h2 {
+  color: #d2691e;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.tentang p {
+  text-align: justify;
+  font-size: 17px;
+}
+
+/* === LIST HOBI === */
+ul {
+  margin: 20px auto;
+  padding: 20px;
+  width: 70%;
+  background-color: #ffe4e1;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(255, 105, 97, 0.4);
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #b22222;
+}
+
+/* === TABEL === */
+table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #f0fff0;
+  box-shadow: 0 4px 15px rgba(0, 128, 0, 0.3);
+}
+
+th {
+  background-color: #32cd32;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+td {
+  padding: 12px;
+  border: 2px solid #006400;
+  color: #333;
+  background-color: #e6ffe6;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content1, .container, table {
+    width: 90%;
+  }
+
+  .content1 img {
+    width: 80%;
+  }
+}
